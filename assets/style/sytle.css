@@ -1,0 +1,89 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing: border-box;  
+}
+
+button:not(:disabled), summary {
+	cursor: pointer;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* color */
+	--color-black: #111;
+	--color-white: #eee;
+
+	--color-background: #973f34;
+
+	/* sizes */
+	--width-letter: 4em;
+	--height-letter: 4em;
+	--border-radius-size: 2em;
+}
+
+
+/*********/
+/* MEDIA */
+/*********/
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* color */
+		--color-black: #f4e7e7;
+		--color-white: #181818;
+
+	    --color-background: #521c15;
+    }
+
+}
+
+/* no animation in reduced mode */
+@media (prefers-reduced-motion: reduce) {
+	body {
+	  animation: none;
+	}
+}
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* body { */
+	/* display */
+	/* display: flex; */
+ 	/* justify-content: center; */
+ 	/* align-items: center; */
+
+	/* color */
+ 	/* color: var(--color-text); */
+	/* background: rgb(85,47,2); */
+	/* background: var(--color-background); */
+
+	/* sizes */
+ 	/* width: 100vw; */
+	/* height: 100vh; */
+	/* font-size: 2vmin; */
+
+	/* text */
+	/* font-family: eenfont, sans-serif; */
+/* } */
