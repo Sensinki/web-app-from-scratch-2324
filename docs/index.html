@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>sena</title>
-        <link rel="stylesheet" href="./assets/style/sytle.css" />
+        <link rel="stylesheet" href="/web-app-from-scratch-2324/assets/style/style.css" />
     </head>
     <body>
         <header>
+            <a href="index.html">
+                <img src="/web-app-from-scratch-2324/assets/images/eye_logo.png" alt="logo" id="logo" />
+            </a>
+
+            <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+
             <nav>
-                <img src="./assets/images/eye_logo.png" alt="logo" />
+                <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,86 +28,90 @@
         </header>
 
         <main>
-            <section id="home">
-                <h1>Hello World</h1>
+            <section id="home" class="onepage">
+                <h1>Hello there,</h1>
                 <h2>I'm Sena</h2>
                 <p>I am into ...</p>
                 <!-- EXTRA: The text should be change in every 5 sec, animation needed (if I have time)-->
                 <img src="" alt="avatar" />
             </section>
 
-            <section id="about">
+            <section id="about" class="onepage">
                 <h1>About me</h1>
                 <h2>Who am I?</h2>
                 <p>I am .....</p>
                 <img src="" alt="image" />
             </section>
 
-            <section id="skills">
+            <section id="skills" class="onepage">
                 <h1>Skills & Abilities</h1>
-                <ul>
+                <ul class="skills">
                     <li>
-                        <img src="" alt="html" />
+                        <img src="/web-app-from-scratch-2324/assets/images/html.png" alt="html" />
                         <p>HTML</p>
                     </li>
                     <li>
-                        <img src="" alt="css" />
+                        <img src="/web-app-from-scratch-2324/assets/images/css.svg.png" alt="css" />
                         <p>CSS</p>
                     </li>
                     <li>
-                        <img src="" alt="javascript" />
+                        <img src="/web-app-from-scratch-2324/assets/images/js.png" alt="javascript" />
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="" alt="git" />
+                        <img src="/web-app-from-scratch-2324/assets/images/git.png" alt="git" />
                         <p>Git</p>
                     </li>
                     <li>
-                        <img src="" alt="github" />
+                        <img src="/web-app-from-scratch-2324/assets/images/github.png" alt="github" />
                         <p>GitHub</p>
                     </li>
                     <li>
-                        <img src="" alt="wordpress" />
+                        <img src="/web-app-from-scratch-2324/assets/images/wordpress.png" alt="wordpress" />
                         <p>Wordpress</p>
                     </li>
                     <li>
-                        <img src="" alt="wix" />
+                        <img src="/web-app-from-scratch-2324/assets/images/wix.png" alt="wix" />
                         <p>Wix</p>
                     </li>
                     <li>
-                        <img src="" alt="mongoDB" />
+                        <img src="/web-app-from-scratch-2324/assets/images/mongodb.png" alt="mongoDB" />
                         <p>MongoDB</p>
                     </li>
                     <li>
-                        <img src="" alt="nodeJS" />
+                        <img src="/web-app-from-scratch-2324/assets/images/nodejs.png" alt="nodeJS" />
                         <p>NodeJS</p>
                     </li>
                     <li>
-                        <img src="" alt="handlebars" />
+                        <img src="/web-app-from-scratch-2324/assets/images/handlebars.png" alt="handlebars" />
                         <p>Handlebars</p>
                     </li>
                     <li>
-                        <img src="" alt="ejs" />
-                        <p>EJS</p>
-                    </li>
-                    <li>
-                        <img src="" alt="expressJS" />
+                        <img src="/web-app-from-scratch-2324/assets/images/expressjs.png" alt="expressJS" />
                         <p>ExpressJS</p>
                     </li>
                     <li>
-                        <img src="" alt="adobe xd" />
+                        <img src="/web-app-from-scratch-2324/assets/images/xd.png" alt="adobe xd" />
                         <p>Adobe XD</p>
                     </li>
                     <li>
-                        <img src="" alt="microsoft word" />
+                        <img src="/web-app-from-scratch-2324/assets/images/figma.png" alt="figma" />
+                        <p>Figma</p>
+                    </li>
+                    <li>
+                        <img src="/web-app-from-scratch-2324/assets/images/miro.png" alt="miro" />
+                        <p>Miro</p>
+                    </li>
+                    <li>
+                        <img src="/web-app-from-scratch-2324/assets/images/word.png" alt="microsoft word" />
                         <p>Microsoft Word</p>
                     </li>
                     <li>
-                        <img src="" alt="microsoft powerpoint" />
+                        <img src="/web-app-from-scratch-2324/assets/images/pp.png" alt="microsoft powerpoint" />
                         <p>Microsoft PowerPoint</p>
                     </li>
                     <li>
-                        <img src="" alt="microsoft excel" />
+                        <img src="/web-app-from-scratch-2324/assets/images/excel.png" alt="microsoft excel" />
                         <p>Microsoft Excel</p>
                     </li>
                 </ul>
@@ -111,7 +121,7 @@
                 <!-- https://css-tricks.com/snippets/css/typewriter-effect/ -->
             </section>
 
-            <section id="contact">
+            <section id="contact" class="onepage">
                 <h1>Get In Touch</h1>
 
                 <img src="" alt="form image" />
@@ -127,36 +137,39 @@
 
                     <input type="submit" value="Submit" />
                 </form>
+
+                <section>
+                    <h3>Contact</h3>
+                    <p>country/region</p>
+                    <p>phone</p>
+                    <p>mail</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sena-nur-k-50169721a/">Linkedin</a></li>
+                        <li><a href="https://discord.com/users/933739295125160007">Discord</a></li>
+                        <li><a href="https://github.com/Sensinki">GitHub</a></li>
+                        <li><a href="mailto: snnrkrk1@gmail.com">Mail</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>
+                        Designed with <span>&hearts;</span> by
+                        <a href="linkedin">Sena Nur Korkutan</a>
+                    </h1>
+                </section>
             </section>
         </main>
 
-        <footer>
-            <section>
-                <h3>Sena's Portfolio</h3>
-                <p>Thank you for visiting my portfolio :)</p>
-            </section>
-
-            <section>
-                <h3>Contact</h3>
-                <p>country/region</p>
-                <p>phone</p>
-                <p>mail</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/sena-nur-k-50169721a/">Linkedin</a></li>
-                    <li><a href="https://discord.com/users/933739295125160007">Discord</a></li>
-                    <li><a href="https://github.com/Sensinki">GitHub</a></li>
-                    <li><a href="mailto: snnrkrk1@gmail.com">Mail</a></li>
-                </ul>
-            </section>
-
+        <!-- footer has to be fixed-->
+        <!-- <footer>
             <section>
                 <h1>
                     Designed with <span>&hearts;</span> by
                     <a href="linkedin">Sena Nur Korkutan</a>
                 </h1>
             </section>
-        </footer>
+        </footer> -->
 
-        <script src="./assets/script/script.js"></script>
+        <script src="/web-app-from-scratch-2324/assets/script/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,273 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button:not(:disabled),
+summary {
+    cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* color */
+    --color-black: #111;
+    --color-white: #eee;
+
+    --color-background: #252929;
+    --greeny-white: #eaf5f1;
+    --pinky-white: #f6eff4;
+    --green: #287851;
+    --pink: #78285c;
+
+    /* sizes */
+    --width-letter: 4em;
+    --height-letter: 4em;
+    --border-radius-size: 2em;
+}
+
+/*********/
+/* MEDIA */
+/*********/
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* color */
+        --color-black: #f4e7e7;
+        --color-white: #181818;
+
+        --color-background: #252929;
+    }
+}
+
+/* no animation in reduced mode */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+}
+
+body {
+    /* color */
+    background: #252929;
+    background: var(--color-background);
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5em;
+}
+
+#logo {
+    width: 45px;
+    height: 45px;
+
+    margin: 1em;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pinky-white);
+}
+
+/* main */
+/* each section takes up the whole page  */
+main {
+    /* size */
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.onepage {
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    /* color */
+    color: var(--color-text);
+
+    /* sizes */
+    width: 100vw;
+    height: 100vh;
+    font-size: 2vmin;
+
+    /* text */
+    font-family: eenfont, sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills li {
+    width: 10em;
+    height: 10em;
+    background-color: var(--green);
+
+    border-radius: 10px;
+}
+
+.skills li img {
+    width: 50%;
+    /* height: 5em; */
+}
+
+@media (min-width: 1em) {
+    /* HEADER */
+    header {
+        padding: 0 2em;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+    }
+
+    /* Resource: https://codepen.io/shooft/pen/MWZYoqa */
+    header a {
+        padding: 0.5em 0;
+    }
+
+    header button {
+        padding: 0.5em;
+
+        background-color: transparent;
+        border: none;
+        border-radius: 0.5em;
+    }
+
+    header button img {
+        height: 1.5em;
+    }
+
+    nav button {
+        justify-self: end;
+    }
+
+    nav {
+        padding: 2em;
+
+        display: grid;
+        align-content: start;
+        gap: 1em;
+
+        background-color: var(--green);
+
+        /* menu slide */
+        position: fixed;
+        left: 60vw;
+        right: 0;
+        top: 0;
+        bottom: 50%;
+
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+
+    nav.toonMenu {
+        transform: translateX(0);
+        background-color: var(--green);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+
+        border-bottom: solid 1px var(--pink);
+    }
+
+    nav a:hover {
+        font-weight: bold;
+    }
+
+    /* in small screen there is no names under the skills */
+    .skills li p {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+    }
+}
+
+@media (min-width: 38em) {
+    .skills li {
+        max-width: 7em;
+        max-height: 7em;
+    }
+}
