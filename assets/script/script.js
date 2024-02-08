@@ -7,7 +7,7 @@ console.log("hi");
 var openButton = document.querySelector("header > button");
 
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
-openButton.addEventListener("mouseover", openMenu);
+openButton.addEventListener("click", openMenu);
 
 // stap 3: voeg in de functie een class toe aan de nav
 function openMenu() {
@@ -45,4 +45,17 @@ function handleKeydown(event) {
         var deNav = document.querySelector("nav");
         deNav.classList.remove("toonMenu");
     }
+}
+
+// WEB API
+const boredapi = "https://www.boredapi.com/api/activity";
+function getActivity() {
+    fetch(boredapi)
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("random").innerText = data.activity;
+        })
+        .catch((error) => {
+            console.error("Unfortunately, this generator is not working now.", error);
+        });
 }
