@@ -138,10 +138,17 @@ section {
 
 h1 {
     font-size: 4em;
+    text-align: center;
 }
 
 h2 {
     font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
 }
 
 p {
@@ -255,14 +262,14 @@ form {
     }
 
     /* in small screen there is no names under the skills */
-    .skills li p {
+    /* .skills li p {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
         overflow: hidden;
         white-space: nowrap;
         width: 1px;
         height: 1px;
-    }
+    } */
 }
 
 @media (min-width: 38em) {

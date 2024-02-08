@@ -59,3 +59,24 @@ function getActivity() {
             console.error("Unfortunately, this generator is not working now.", error);
         });
 }
+
+const titleCard = document.querySelector(".title");
+const skillGithubUrl = "https://raw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/script/skills.json";
+async function skillsApi() {
+    try {
+        const reactie = await fetch(skillGithubUrl);
+        const data = await reactie.json();
+        titleCard.textContent = data["html"].title;
+        const avatarImgs = document.querySelectorAll(".avatarIcon");
+        console.log(data);
+        avatarImgs.forEach((img) => {
+            img.src = data["html"].image;
+            img.alt = "avatar";
+        });
+        console.log(data);
+    } catch (error) {
+        console.error("Er is een fout opgetreden bij het ophalen en verwerken van de JSON:", error);
+    }
+}
+
+skillsApi();
