@@ -5,66 +5,66 @@
     },
     "css": {
         "title": "CSS",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/css.png"  
+        "image": "https://raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/css.png"  
     },
      "js": {
         "title": "JavaScript",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/js.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/js.png"  
     },
      "git": {
         "title": "Git",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/git.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/git.png"  
     },
      "github": {
         "title": "GitHub",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/github.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/imagesraw.github.png"  
     },
      "wordpress": {
         "title": "Wordpress",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/wordpress.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/wordpress.png"  
     },
      "wix": {
         "title": "Wix",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/wix.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/wix.png"  
     },
      "mongodb": {
         "title": "MongoDB",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/mongodb.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/mongodb.png"  
     },
      "nodejs": {
         "title": "NodeJS",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/nodejs.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/nodejs.png"  
     },
      "handlebars": {
         "title": "Handlebars",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/handlebars.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/handlebars.png"  
     },
      "express": {
         "title": "Express",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/express.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/express.png"  
     },
      "xd": {
         "title": "Adobe XD",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/xd.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/xd.png"  
     },
      "figma": {
         "title": "Figma",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/figma.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/figma.png"  
     },
      "miro": {
         "title": "Miro",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/miro.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/miro.png"  
     },
      "word": {
         "title": "Microsoft Word",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/word.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/word.png"  
     },
      "pp": {
         "title": "Microsoft PowerPoint",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/pp.png"  
+        "image": "https:/raw.github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/pp.png"  
     },
      "excel": {
         "title": "Microsoft Excel",
-        "image": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/docs/assets/images/excel.png"  
+        "image": "https://rawraw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/images/excel.png"  
     }
 }

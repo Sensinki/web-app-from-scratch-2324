@@ -60,22 +60,71 @@ function getActivity() {
         });
 }
 
-const titleCard = document.querySelector(".title");
-const skillGithubUrl = "https://raw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/script/skills.json";
+// FETHING DATA FROM GITHUB
+// const titleCard = document.querySelector(".title");
+// const skillGithubUrl = "https://raw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/script/skills.json";
+// async function skillsApi() {
+//     try {
+//         const reactie = await fetch(skillGithubUrl);
+//         const data = await reactie.json();
+//         titleCard.textContent = data["html"].title;
+//         const avatarImgs = document.querySelectorAll(".avatarIcon");
+//         console.log(data);
+//         avatarImgs.forEach((img) => {
+//             img.src = data["html"].image;
+//             img.alt = "avatar";
+//         });
+//         console.log(data);
+//     } catch (error) {
+//         console.error("JSON is not working", error);
+//     }
+// }
+
+// skillsApi();
+
 async function skillsApi() {
+    const skillGithubUrl = "https://raw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/script/skills.json";
+
     try {
-        const reactie = await fetch(skillGithubUrl);
-        const data = await reactie.json();
-        titleCard.textContent = data["html"].title;
-        const avatarImgs = document.querySelectorAll(".avatarIcon");
-        console.log(data);
-        avatarImgs.forEach((img) => {
-            img.src = data["html"].image;
-            img.alt = "avatar";
+        const response = await fetch(skillGithubUrl);
+        const data = await response.json();
+
+        // Select the skills list
+        const skillsList = document.querySelector(".skills");
+
+        // Loop through each skill in the JSON data
+        Object.keys(data).forEach((skillKey) => {
+            const skill = data[skillKey];
+
+            // Create a new list item
+            const listItem = document.createElement("li");
+
+            // Create an image element
+            const img = document.createElement("img");
+            img.classList.add("avatarIcon");
+            img.src = skill.image;
+            img.alt = skill.title;
+
+            // Create a paragraph element for the skill title
+            const titleParagraph = document.createElement("p");
+            titleParagraph.classList.add("title");
+            titleParagraph.textContent = skill.title;
+
+            // Append the image and title paragraph to the list item
+            listItem.appendChild(img);
+            listItem.appendChild(titleParagraph);
+
+            // Append the list item to the skills list
+            skillsList.appendChild(listItem);
         });
-        console.log(data);
+
+        // Remove the loading message
+        const loadingMessage = document.querySelector("#skills p");
+        if (loadingMessage) {
+            loadingMessage.remove();
+        }
     } catch (error) {
-        console.error("JSON is not working", error);
+        console.error("Error fetching or processing JSON:", error);
     }
 }
 
