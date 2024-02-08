@@ -238,7 +238,7 @@ form {
         transition: transform 0.5s;
     }
 
-    nav.toonMenu {
+    nav.showMenu {
         transform: translateX(0);
         background-color: var(--green);
     }
