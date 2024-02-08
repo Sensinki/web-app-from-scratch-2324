@@ -75,7 +75,7 @@ async function skillsApi() {
         });
         console.log(data);
     } catch (error) {
-        console.error("Er is een fout opgetreden bij het ophalen en verwerken van de JSON:", error);
+        console.error("JSON is not working", error);
     }
 }
 
