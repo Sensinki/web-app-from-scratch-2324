@@ -1,57 +1,82 @@
 /* CSS Document */
 
-/*********/
 /* FONTS */
-/*********/
 
-/**************/
-/* CSS REMEDY */
-/**************/
+@import url("https://fonts.googleapis.com/css2?family=Honk&family=VT323&display=swap");
+
+@font-face {
+    font-family: "Stylish";
+    src: url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+    font-style: normal;
+}
+
+/* EVERYTHING */
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Stylish", serif;
 }
 
 button:not(:disabled),
-summary {
+summary,
+a {
     cursor: pointer;
 }
 
-/*********************/
 /* CUSTOM PROPERTIES */
-/*********************/
 :root {
     /* color */
     --color-black: #111;
     --color-white: #eee;
 
     --color-background: #252929;
-    --greeny-white: #eaf5f1;
-    --pinky-white: #f6eff4;
-    --green: #287851;
-    --pink: #78285c;
 
-    /* sizes */
-    --width-letter: 4em;
-    --height-letter: 4em;
-    --border-radius-size: 2em;
+    --light-ten: #f0e1dc;
+    --ten: #d9c0b9;
+    --magenta: #926f89;
+    --blue: #5670a3;
+    --dark-blue: #181d45;
+
+    --tra-light-ten: #f0e1dc8a;
+    --tra-ten: #d9c0b97a;
+    --tra-magenta: rgba(146, 111, 137, 0.571) 6f89;
+    --tra-blue: #5670a390;
+    --tra-dark-blue: #181d45f3;
+    --tra-purple: #572c4ff8;
+
+    --gradient-lig-ten: linear-gradient(135deg, #f0e1dc) 0%, #d9c0b9 100%;
+    --gradient-ten-mag: linear-gradient(135deg, #d9c0b9) 0%, #926f89 100%;
+    --gradient-mag-blu: linear-gradient(135deg, #926f89) 0%, #5670a3 100%;
+    --gradient-blu-dar: linear-gradient(135deg, #5670a3) 0%, #181d45 100%;
+    --gradient-mag-dar: linear-gradient(135deg, #926f89) 20%, #181d45 100%;
 }
 
-/*********/
 /* MEDIA */
-/*********/
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
         /* color */
-        --color-black: #f4e7e7;
-        --color-white: #181818;
+        --color-black: #111;
+        --color-white: #eee;
 
         --color-background: #252929;
+
+        --light-ten: #f0e1dc;
+        --ten: #d9c0b9;
+        --magenta: #926f89;
+        --blue: #5670a3;
+        --dark-blue: #181d45;
+        --purple: #572c4f;
+
+        --gradient-lig-ten: linear-gradient(180deg, rgb(41, 49, 108, 1) 0%, rgba(87, 44, 79, 1) 100%);
+        --gradient-ten-mag: linear-gradient(180deg, rgba(87, 44, 79, 1) 0%, rgba(86, 112, 163, 1) 100%);
+        --gradient-mag-blu: linear-gradient(180deg, rgba(86, 112, 163, 1) 0%, rgba(217, 192, 185, 1) 100%);
+        --gradient-blu-dar: linear-gradient(180deg, rgba(217, 192, 185, 1) 0%, rgba(240, 225, 220, 1) 100%);
+        --gradient-mag-dar: linear-gradient(180deg, rgba(240, 225, 220, 1) 0%, rgba(223, 141, 158, 1) 100%);
     }
 }
 
@@ -62,31 +87,39 @@ summary {
     }
 }
 
-body {
-    /* color */
-    background: #252929;
-    background: var(--color-background);
+/* BACKGROUND COLOR */
+main > section:nth-of-type(1) {
+    background: var(--gradient-lig-ten);
 }
 
-/* header */
+main > section:nth-of-type(2) {
+    background: var(--gradient-ten-mag);
+}
+
+main > section:nth-of-type(3) {
+    background: var(--gradient-mag-blu);
+}
+
+main > section:nth-of-type(4) {
+    background: var(--gradient-blu-dar);
+}
+
+main > section:nth-of-type(5) {
+    background: var(--gradient-mag-dar);
+}
+
+/* HEADER */
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
-    background-color: #333;
+    background: rgba(139, 0, 35, 0.4);
+    backdrop-filter: blur(1em);
     position: fixed;
     top: 0;
     width: 100%;
     height: 5em;
-}
-
-#logo {
-    width: 45px;
-    height: 45px;
-
-    margin: 1em;
 }
 
 ul {
@@ -100,7 +133,15 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--pinky-white);
+    color: var(--light-ten);
+}
+
+/* LOGO */
+#logo {
+    width: 45px;
+    height: 45px;
+
+    margin: 1em;
 }
 
 /* main */
@@ -179,9 +220,10 @@ form {
     border-radius: 10px;
 }
 
-.skills li img {
-    width: 50%;
-    /* height: 5em; */
+.skills img {
+    width: 60px;
+    height: 60px;
+    object-fit: scale-down;
 }
 
 @media (min-width: 1em) {
@@ -195,6 +237,7 @@ form {
 
         position: fixed;
         top: 0;
+        z-index: 1;
     }
 
     /* Resource: https://codepen.io/shooft/pen/MWZYoqa */
@@ -220,12 +263,12 @@ form {
 
     nav {
         padding: 2em;
+        height: 25em;
 
         display: grid;
         align-content: start;
         gap: 1em;
-
-        background-color: var(--green);
+        background-color: var(--tra-dark-blue);
 
         /* menu slide */
         position: fixed;
@@ -234,13 +277,19 @@ form {
         top: 0;
         bottom: 50%;
 
+        z-index: 10;
+
         transform: translateX(100%);
-        transition: transform 0.5s;
+        transition: transform 1s;
+        backdrop-filter: invert(100%);
     }
 
     nav.showMenu {
         transform: translateX(0);
-        background-color: var(--green);
+        height: 25em;
+        backdrop-filter: invert(100%);
+        background-color: var(--tra-purple);
+        box-shadow: -5px 5px 46px 0px rgba(168, 147, 217, 0.75);
     }
 
     nav ul {
@@ -254,7 +303,7 @@ form {
         display: flex;
         align-items: center;
 
-        border-bottom: solid 1px var(--pink);
+        border-bottom: solid 1px var(--dark-blue);
     }
 
     nav a:hover {
@@ -262,19 +311,40 @@ form {
     }
 
     /* in small screen there is no names under the skills */
-    /* .skills li p {
+    .skills li p {
         clip: rect(0 0 0 0);
         clip-path: inset(50%);
         overflow: hidden;
         white-space: nowrap;
         width: 1px;
         height: 1px;
-    } */
+    }
 }
 
 @media (min-width: 38em) {
     .skills li {
         max-width: 7em;
         max-height: 7em;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: plum;
     }
 }

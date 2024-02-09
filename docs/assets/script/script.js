@@ -78,5 +78,4 @@ async function skillsApi() {
         console.error("Error fetching or processing JSON:", error);
     }
 }
-
 skillsApi();
