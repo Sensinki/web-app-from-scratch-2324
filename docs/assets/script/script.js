@@ -79,3 +79,8 @@ async function skillsApi() {
     }
 }
 skillsApi();
+
+// TO GOING BACK TO PREVIOUS WEBPAGE
+document.getElementById("backButton").addEventListener("onclick", () => {
+    history.back();
+});

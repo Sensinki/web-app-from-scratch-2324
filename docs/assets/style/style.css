@@ -3,7 +3,7 @@
 /* FONTS */
 
 @import url("https://fonts.googleapis.com/css2?family=Honk&family=VT323&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
 @font-face {
     font-family: "Stylish";
     src: url("/web-app-from-scratch-2324/docs/assets/fonts/Stylish-Regular.ttf");
@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     font-family: "Stylish", serif;
-    color: var(--light-ten);
+    color: var(--l);
 }
 
 button:not(:disabled),
@@ -175,6 +175,11 @@ main {
 }
 
 section {
+    /* display */
+    display: flex;
+    flex-direction: column;
+}
+article {
     /* display */
     display: flex;
     flex-direction: column;
@@ -390,7 +395,6 @@ form {
     }
 
     /* LOADING */
-
     #skills p {
         padding-top: 1em;
         font-size: 3em;
@@ -432,14 +436,21 @@ form {
     #skills p span:nth-of-type(10) {
         animation-delay: 0.9s;
     }
+
+    /* SECTION 1 */
+
+    main > section:nth-of-type(1) img {
+        /* position */
+        margin: 2em;
+        width: 20em;
+        height: 20em;
+    }
+
+    /* SECTION 1 END */
 }
 
 @media (min-width: 38em) {
-    #skills ul li {
-        /* sizes */
-        max-width: 7em;
-        max-height: 7em;
-    }
+    /* HEADER */
     /* Resource: https://codepen.io/shooft/pen/MWZYoqa */
     header a {
         /* sizes */
@@ -502,6 +513,29 @@ form {
         /* text */
         font-weight: bold;
     }
+
+    /* SECTION 1 */
+    main > section:nth-of-type(1) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    main > section:nth-of-type(1) article {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    main > section:nth-of-type(1) img {
+        grid-area: 1 / 2 / 4 / 3;
+    }
+
+    /* SECTION 4 */
+    main > section:nth-of-type(4) ul li {
+        /* sizes */
+        max-width: 7em;
+        max-height: 7em;
+    }
 }
 
 /* KEYFRAMES */
@@ -538,5 +572,64 @@ form {
     }
     100% {
         transform: none;
+    }
+}
+
+/* TYPING EFFECT */
+/* Resource: https://medium.com/@valentyn.vasylenko/typewriter-effect-with-alternating-text-in-pure-css3-72cf0c7e6c5 */
+
+main > section:nth-of-type(1) p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+.typing-1 {
+    animation: typing-text1;
+}
+.typing-2 {
+    animation: typing-text2;
+}
+.typing-1,
+.typing-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+.typing-1::after,
+.typing-2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes typing-text1 {
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+    10%,
+    40% {
+        width: 7.5em;
+    }
+}
+@keyframes typing-text2 {
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    60%,
+    90% {
+        width: 6em;
     }
 }
