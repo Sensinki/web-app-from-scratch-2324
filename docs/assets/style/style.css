@@ -123,7 +123,7 @@ a {
         /* display */
         text-decoration: none;
         /* color */
-        color: var(--light-ten);
+        color: var(--color-black);
     }
 
     /* HEADER */
@@ -209,7 +209,7 @@ a {
         backdrop-filter: invert(100%);
 
         /* sizes */
-        height: 25em;
+        height: 27em;
 
         /* animation */
         transform: translateX(100%);
@@ -218,12 +218,12 @@ a {
 
     nav.showMenu {
         /* sizes */
-        height: 25em;
+        height: 27em;
 
         /* color */
         backdrop-filter: invert(100%);
         background-color: var(--tra-purple);
-        box-shadow: -5px 5px 46px 0px rgba(168, 147, 217, 0.75);
+        box-shadow: -3px 3px 5px 0px rgba(226, 216, 248, 0.75);
 
         /* animation */
         transform: translateX(0);
@@ -328,13 +328,47 @@ a {
         height: 20em;
     }
 
+    /* TYPING EFFECT */
+    /* Resource: https://medium.com/@valentyn.vasylenko/typewriter-effect-with-alternating-text-in-pure-css3-72cf0c7e6c5 */
+    main > section:nth-of-type(1) p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2em;
+    }
+    .typing-1 {
+        animation: typing-text1;
+    }
+    .typing-2 {
+        animation: typing-text2;
+    }
+    .typing-1,
+    .typing-2 {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 10s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+    }
+    .typing-1::after,
+    .typing-2::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+    }
+
     /* SECTION 2 */
     main > section:nth-of-type(2) {
         /* color */
         color: var(--color-white);
 
         /* text */
-        font-size: 70%;
+        font-size: 60%;
     }
 
     main > section:nth-of-type(2) p {
@@ -352,6 +386,47 @@ a {
         margin: 2em;
         width: 10em;
         height: 10em;
+    }
+
+    /* SECTION 3 */
+    main > section:nth-of-type(3) {
+        min-width: 10em;
+    }
+
+    main > section:nth-of-type(3) button {
+        /* position */
+        padding: 0 1em;
+
+        /* size */
+        height: 3em;
+
+        /* color */
+        color: var(--color-white);
+        background-image: var(--gradient-ten-mag);
+
+        /* border */
+        border-radius: 1em;
+        border-style: none;
+        box-sizing: border-box;
+        box-shadow: rgba(88, 21, 48, 0.5) 0 2px 3px;
+
+        /* text */
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+        transition: all 0.5s;
+    }
+
+    main > section:nth-of-type(3) button:hover {
+        box-shadow: rgba(88, 21, 48, 0.5) 0 4px 3px;
+        transition-duration: 0.1s;
+    }
+
+    main > section:nth-of-type(3) button:active {
+        box-shadow: rgba(88, 21, 48, 0.5) 0 2px 3px;
+        transform: translateY(0.2em);
+        transition-duration: 0.2s;
     }
 
     /* SECTION 4 */
@@ -431,6 +506,9 @@ a {
         flex-wrap: wrap;
         overflow: hidden;
 
+        /* position */
+        padding: 0.5em;
+
         /* color */
         background: var(--gradient-mag-blu);
 
@@ -440,7 +518,8 @@ a {
 
         /* border */
         border-radius: 15px;
-        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+        /* box-shadow: 5px 5px 10px 0px rgba(82, 25, 25, 0.75); */
+        box-shadow: rgba(88, 21, 48, 0.5) 0 2px 3px;
     }
 
     main > section:nth-of-type(4) ul img {
@@ -465,6 +544,7 @@ a {
     header a {
         /* sizes */
         padding: 0.5em 0;
+        color: var(--color-white);
     }
 
     header button {
@@ -556,7 +636,59 @@ a {
         grid-area: 1 / 2 / 4 / 3;
     }
 
+    main > section:nth-of-type(2) {
+        /* text */
+        font-size: 70%;
+    }
+
+    /* SECTION 3 */
+    main > section:nth-of-type(3) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15em 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+    }
+
+    main > section:nth-of-type(3) h1 {
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: self-end;
+    }
+
+    main > section:nth-of-type(3) button {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    main > section:nth-of-type(3) p {
+        grid-area: 3 / 1 / 4 / 2;
+        align-self: self-start;
+    }
+
     /* SECTION 4 */
+    main > section:nth-of-type(4) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15em 2fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+    }
+
+    main > section:nth-of-type(4) h1 {
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: self-end;
+    }
+
+    main > section:nth-of-type(4) ul {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    main > section:nth-of-type(4) p {
+        grid-area: 3 / 1 / 4 / 2;
+        align-self: self-start;
+    }
+
     main > section:nth-of-type(4) ul li {
         /* sizes */
         max-width: 7em;
@@ -579,27 +711,8 @@ a {
 }
 
 /* KEYFRAMES */
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: plum;
-    }
-}
-
+/* LOADING EFFECT */
 @keyframes bounce {
     0% {
         transform: none;
@@ -616,40 +729,6 @@ a {
 }
 
 /* TYPING EFFECT */
-/* Resource: https://medium.com/@valentyn.vasylenko/typewriter-effect-with-alternating-text-in-pure-css3-72cf0c7e6c5 */
-
-main > section:nth-of-type(1) p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2em;
-}
-.typing-1 {
-    animation: typing-text1;
-}
-.typing-2 {
-    animation: typing-text2;
-}
-.typing-1,
-.typing-2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 10s;
-    animation-timing-function: steps(25, end);
-    animation-iteration-count: infinite;
-}
-.typing-1::after,
-.typing-2::after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-}
-
 @keyframes typing-text1 {
     0%,
     50%,
