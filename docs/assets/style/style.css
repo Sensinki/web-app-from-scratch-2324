@@ -4,11 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Honk&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
-@font-face {
-    font-family: "Stylish";
-    src: url("/web-app-from-scratch-2324/docs/assets/fonts/Stylish-Regular.ttf");
-    font-style: normal;
-}
 
 /* EVERYTHING */
 *,
