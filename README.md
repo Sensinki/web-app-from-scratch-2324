@@ -21,7 +21,7 @@ In this course, you'll learn to make a website without using just basic HTML, CS
 ## Assignment
 
 1. Build your own SPA/Website with external data from an API with minimal 1 micro-interaction.
-2. A TeamApp with a collection of all the individual websites of your team members.
+2. A team app with a collection of all the individual websites of your team members.
 
 ## The requirements of the assessment
 
@@ -48,14 +48,14 @@ The project;
 
 ## Live Demo
 
-You can reach the demo-website from [this link](https://sensinki.github.io/web-app-from-scratch-2324/)
+You can reach the demo-website via [this link](https://sensinki.github.io/web-app-from-scratch-2324/)
 
 ## Features
 
-I've chosen to focus on a few simple micro-interactions. You can read an overview on the table below:
+I've chosen to focus on a few simple micro-interactions. You can read an overview of the features on the table below:
 
 - Scroll snap for each section
-- No animation if user  "prefers-reduced-motion: reduce" mode
+- No animation if user "prefers-reduced-motion: reduce" mode
 - Typewriting effect
 - Random activity generator API
 - Backdrop filter for header
