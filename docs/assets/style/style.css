@@ -375,7 +375,7 @@ a {
 
     main > section:nth-of-type(2) p {
         /* position */
-        padding: 2em;
+        margin: 2em;
 
         /* size */
         max-width: 20em;
@@ -386,8 +386,9 @@ a {
     main > section:nth-of-type(2) img {
         /* text */
         margin: 2em;
-        width: 10em;
-        height: 10em;
+        height: 20em;
+        border-radius: 2em;
+        transform: rotate(90deg);
     }
 
     /* SECTION 3 */
@@ -534,10 +535,113 @@ a {
     /* SECTION 5 */
 
     /* form */
+    /* https://codepen.io/ainalem/pen/GRqPwoz?editors=1100 */
     form {
         /* display */
         display: flex;
         flex-direction: column;
+        background-color: var(--magenta);
+        border-radius: 1em;
+        box-sizing: border-box;
+        height: 25em;
+        padding: 1em;
+        width: 20em;
+    }
+
+    fieldset {
+        border: none;
+        height: 3em;
+        position: relative;
+        width: 100%;
+        margin-top: 2.3em;
+    }
+    fieldset:nth-of-type(1) {
+        margin-top: 1em;
+    }
+
+    fieldset:nth-of-type(3) input {
+        height: 5em;
+        margin-bottom: 1em;
+    }
+
+    input {
+        background-color: var(--dark-blue);
+        border-radius: 12px;
+        border: 0;
+        box-sizing: border-box;
+        color: #fcffea;
+        font-size: 18px;
+        height: 2.5em;
+        outline: 0;
+        padding: 4px 20px 0;
+        width: 100%;
+        box-shadow: 0px 2px 3px 2px var(--tra-ten);
+    }
+
+    .cut {
+        background-color: var(--magenta);
+        border-radius: 10px;
+        height: 20px;
+        left: 20px;
+        position: absolute;
+        top: -20px;
+        transform: translateY(0);
+        transition: transform 200ms;
+        width: 76px;
+    }
+
+    .cut-short {
+        width: 50px;
+    }
+
+    input:focus ~ .cut,
+    input:not(:placeholder-shown) ~ .cut {
+        transform: translateY(8px);
+    }
+
+    .placeholder {
+        color: #65657b;
+        left: 20px;
+        line-height: 8px;
+        pointer-events: none;
+        position: absolute;
+        transform-origin: 0 50%;
+        transition: transform 200ms, color 200ms;
+        top: 20px;
+    }
+
+    input:focus ~ .placeholder,
+    input:not(:placeholder-shown) ~ .placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+    }
+
+    input:not(:placeholder-shown) ~ .placeholder {
+        color: #c4c4e0;
+    }
+
+    input:focus ~ .placeholder {
+        color: #5f9c6e;
+    }
+
+    input[type="submit"] {
+        background-color: var(--blue);
+        border-radius: 12px;
+        border: 0;
+        box-sizing: border-box;
+        color: #ffd7d7;
+        cursor: pointer;
+        font-size: 18px;
+        height: 50px;
+        margin-top: 4em;
+        outline: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    input[type="submit"]:active {
+        background-color: var(--purple);
+        transform: translateY(0.2em);
+        transition-duration: 0.2s;
     }
 }
 
@@ -633,6 +737,7 @@ a {
 
     main > section:nth-of-type(2) img {
         grid-area: 2 / 1 / 3 / 2;
+        height: 30em;
     }
 
     main > section:nth-of-type(2) article {
@@ -702,25 +807,20 @@ a {
     /* got help from: https://cssgrid-generator.netlify.app/ */
     main > section:nth-of-type(5) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-template-rows: 15em 1fr 1fr;
         justify-items: center;
     }
 
     main > section:nth-of-type(5) h1 {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 2;
         align-self: self-end;
     }
-
-    main > section:nth-of-type(5) img {
-        grid-area: 2 / 1 / 3 / 2;
-    }
     main > section:nth-of-type(5) form {
-        grid-area: 2 / 2 / 3 / 3;
+        grid-area: 2 / 1 / 2 / 2;
     }
 
     main > section:nth-of-type(5) section {
-        grid-area: 3 / 1 / 4 / 3;
+        grid-area: 3 / 1 / 4 / 2;
         width: 100vw;
         background: var(--purple);
         box-shadow: 0px 1px 10px 5px var(--tra-ten);
