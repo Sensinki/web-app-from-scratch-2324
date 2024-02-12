@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-<https://www.eddymens.com/blog/markdown-table-of-contents-toc-how-to-create-one>
-
 - [Introduction](#introduction)
 - [Assignment](#assignment)
 - [Requirements](#the-requirements-of-the-assessment)
