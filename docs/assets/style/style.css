@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     font-family: "Stylish", serif;
-    color: var(--l);
 }
 
 button:not(:disabled),
@@ -237,6 +236,14 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    nav ul li:hover a {
+        /* color */
+        color: var(--dark-blue);
+
+        /* animation */
+        transform: scale(1.125);
     }
 
     nav a {
@@ -563,11 +570,9 @@ a {
     }
 
     form p {
-        color: #eee;
-        font-family: sans-serif;
+        color: var(--color-white);
         font-size: 16px;
-        font-weight: 600;
-        margin-top: 10px;
+        font-weight: 700;
     }
 
     input {

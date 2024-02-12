@@ -1,7 +1,10 @@
 {
-    "name": "Sena",
+    "firstName": "Sena",
+    "lastName": "Korkutan",
+    "avatar_url": "https://raw.githubusercontent.com/Sensinki/web-app-from-scratch-2324/main/docs/assets/images/avatarsena.png",
     "age": "22",
-    "avatar": "https://github.com/Sensinki/web-app-from-scratch-2324/blob/main/assets/images/html.png",
+    "city": "Amsterdam",
+    "hobbies": ["Films", "Music", "Anime"],
     "socials": {
         "discord": "https://discord.com/users/933739295125160007",
         "linkedin": "https://www.linkedin.com/in/sena-nur-k-50169721a/",
