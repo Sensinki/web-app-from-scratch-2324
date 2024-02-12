@@ -62,6 +62,7 @@ I've chosen to focus on a few simple micro-interactions. You can read an overvie
 ## :v: How to clone?
 
 You have to clone this repository in order to use this app. Use the following command in your terminal:
+
 'git clone <https://github.com/Sensinki/web-app-from-scratch-2324.git>'
 
 ## :black_nib: Author
