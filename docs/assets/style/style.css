@@ -542,11 +542,11 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5em;
+        gap: 2.3em;
         background-color: var(--magenta);
         border-radius: 1em;
         box-sizing: border-box;
-        height: 40em;
+        height: 30em;
         padding: 1em;
         width: 25em;
         max-width: 25em;
@@ -560,6 +560,14 @@ a {
     }
     fieldset:nth-of-type(1) {
         margin-top: 1em;
+    }
+
+    form p {
+        color: #eee;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
     }
 
     input {
@@ -649,6 +657,7 @@ a {
         display: grid;
         grid-template-rows: 15em 1fr 1fr;
         justify-items: center;
+        font-size: 14px;
     }
 
     main > section:nth-of-type(5) h1 {
@@ -890,7 +899,6 @@ a {
         font-size: 1em;
         text-align: center;
     }
-
 
     form {
         gap: 2.3em;
