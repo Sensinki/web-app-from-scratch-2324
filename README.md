@@ -8,11 +8,11 @@ Welcome to my mini demo-portfolio site created for the Webapps From Scratch cour
 - [:page_with_curl: Assignment](#page_with_curl-assignment)
 - [:white_check_mark: Requirements](#white_check_mark-the-requirements-of-the-assignment)
 - [:hammer: Build with](#hammer-build-with)
-- [:cd: Live demo](#cd-live-demo)
-- [:bulb: Features](#bulb-features)
 - [:v: How to clone](#v-how-to-clone)
 - [:black_nib: Author](#black_nib-author)
 - [:copyright: License](#copyright-licence)
+- [:cd: Live demo](#cd-live-demo)
+- [:bulb: Features](#bulb-features)
 
 ## :wrench: INTRODUCTION
 
@@ -42,11 +42,12 @@ The project;
 - is documented.
 
 ## :hammer: BUILD WITH
-
-<img src="./docs/assets/images/html.png" width="50px" height="50px">
-<img src="./docs/assets/images/css.svg.png" width="50px" height="50px">
-<img src="./docs/assets/images/js.png" width="50px" height="50px">
-<img src="./docs/assets/images/git.png" width="50px" height="50px">
+<p>
+    <img src="./docs/assets/images/html.png" width="50px" height="50px">
+    <img src="./docs/assets/images/css.svg.png" width="50px" height="50px">
+    <img src="./docs/assets/images/js.png" width="50px" height="50px">
+    <img src="./docs/assets/images/git.png" width="50px" height="50px">
+</p>
 
 - Semantically correct HTML
 - Clear CSS
@@ -56,6 +57,24 @@ The project;
 ## :cd: LIVE DEMO
 
 You can reach the demo-website via [this link](https://sensinki.github.io/web-app-from-scratch-2324/)
+
+## :v: HOW TO CLONE?
+
+You have to clone this repository in order to use this app. Use the following command in your terminal:
+
+<pre> 
+    <code>git clone https://github.com/Sensinki/web-app-from-scratch-2324.git</code>
+</pre>
+
+## :black_nib: AUTHOR
+
+<img src="./docs/assets/images/avatarsena.png" width="100px" height="100px">
+
+This project is made by [Sena Nur Korkutan](https://github.com/Sensinki).
+
+## :copyright: LICENCE
+
+This project uses the [MIT License](https://github.com/Sensinki/web-app-from-scratch-2324?tab=MIT-1-ov-file).
 
 ## :bulb: FEATURES
 
@@ -128,48 +147,3 @@ I wanted the form I created in the contact section to function correctly and I w
 
 <img src="./docs/assets/images/process/form.png" width="500px">
 
-## :v: HOW TO CLONE?
-
-You have to clone this repository in order to use this app. Use the following command in your terminal:
-
-' git clone <https://github.com/Sensinki/web-app-from-scratch-2324.git> '
-
-## :black_nib: AUTHOR
-
-<img src="./docs/assets/images/avatarsena.png" width="100px" height="100px">
-
-This project is made by [Sena Nur Korkutan](https://github.com/Sensinki).
-
-## :copyright: LICENCE
-
-This project uses the [MIT License](https://github.com/Sensinki/web-app-from-scratch-2324?tab=MIT-1-ov-file).
-
-## Template checklist
-
-User Interface*- you design, build and test the user interface by applying interface design principles
-Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI
-
-Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html
-
-Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.
-
-- Add a link to your live demo in Github Pages 🌐
-<https://sensinki.github.io/web-app-from-scratch-2324/>
-
-- replace this description with a description of your own work
-
-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍
-
-Add a nice poster image here at the end of the week, showing off your shiny frontend 📸
-
-- Maybe a table of contents here? 📚
-
-- How about a section that describes how to install this project? 🤓
-
-- ...but how does one use this project? What are its features 🤔
-
-- What external data source is featured in your project and what are its properties 🌠
-
-Maybe a checklist of done stuff and stuff still on your wishlist? ✅
-
-- How about a license here? 📜 (or is it a licence?) 🤷
