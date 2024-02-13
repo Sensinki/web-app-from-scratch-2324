@@ -44,6 +44,9 @@ The project;
 ## :hammer: BUILD WITH
 
 <img src="./docs/assets/images/html.png" width="50px" height="50px">
+<img src="./docs/assets/images/css.svg.png" width="50px" height="50px">
+<img src="./docs/assets/images/js.png" width="50px" height="50px">
+<img src="./docs/assets/images/git.png" width="50px" height="50px">
 
 - Semantically correct HTML
 - Clear CSS
@@ -58,20 +61,82 @@ You can reach the demo-website via [this link](https://sensinki.github.io/web-ap
 
 I've chosen to focus on a few simple micro-interactions. You can read an overview of the features on the table below:
 
-- Scroll snap for each section
-- No animation if user "prefers-reduced-motion: reduce" mode
-- Typewriting effect
-- Random activity generator API
-- Backdrop filter for header
-- Loading animation
+- [Scroll snap for each section](#scroll-snap)
+- [No animation if user "prefers-reduced-motion: reduce" mode](#no-animation)
+- [Typewriting effect](#typewriting-effect)
+- [Random activity generator API](#random-activity-generator)
+- [Json for skills](#json-for-skills)
+- [Backdrop filter for header](#backdrop-filter)
+- [Loading animation](#loading-animation)
+- [Sending email with form submission](#sending-email-with-form)
+
+### SCROLL SNAP
+
+I divided each part of the page like about, skills, contact into sections and gave these sections a scroll snap effect as follows.
+
+<img src="./docs/assets/images/process/scroll-main.png" width="500px">
+<img src="./docs/assets/images/process/scroll-section.png" width="500px">
+
+### NO ANIMATION
+
+My website has a few animations moving around and this animations can be annoying for people who don't want it. So for those people I used the following code:
+
+<img src="./docs/assets/images/process/no-animation.png" width="500px">
+
+### TYPEWRITING EFFECT
+
+I wanted to use the typewriting effect in an old project, but I didn't succeed because I didn't know how to, so I wanted to include it in this project and I succeeded with the code below:
+
+<img src="./docs/assets/images/process/typing-html.png" width="500px">
+<img src="./docs/assets/images/process/typing-css.png" width="500px">
+
+### RANDOM ACTIVITY GENERATOR
+
+I needed to use an external api for the site I made and I wanted to use an api that can select random activity. I was able to do this using the javascript code as follows:
+
+<img src="./docs/assets/images/process/random-html.png" width="500px">
+<img src="./docs/assets/images/process/random-js.png" width="500px">
+
+### JSON FOR SKILLS
+
+While making this feature, I was able to understand JSON and API, which I had struggled to understand for a long time. Firstly, I created a skills.json file containing all my skills and learned how to fetch them using javascript (I got some help from chatgpt on this part). This task, which I gave myself, allowed me to learn how to easily create elements with JavaScript and see how I could manipulate them. Below you can see the code I used to do this:
+
+<img src="./docs/assets/images/process/skills-html.png" width="500px">
+<img src="./docs/assets/images/process/skills-css.png" width="500px">
+<img src="./docs/assets/images/process/skills-js.png" width="500px">
+
+### BACKDROP FILTER
+
+The part I had the most difficulty in making the header part was giving blur to the background. I didn't know there was such a thing as a backdrop-filter and I was constantly trying other options, but after I discovered the existence of such a feature, it was much easier. With a very short two lines of css code, I managed to blur the part that comes behind the header like this:
+
+<img src="./docs/assets/images/process/backdrop.png" width="500px">
+
+After I discovered the backdrop-filter, I used it not only for blurring, but also for inverting.
+
+<img src="./docs/assets/images/process/backdrop-filter.png" width="500px">
+
+### LOADING ANIMATION
+
+I decided to make a loading animation to show that the skills are loaded, i.e. I am still in the development phase. I did it like this:
+
+<img src="./docs/assets/images/process/loading-html.png" width="500px">
+<img src="./docs/assets/images/process/loading-css.png" width="500px">
+
+### SENDING EMAIL WITH FORM
+
+I wanted the form I created in the contact section to function correctly and I wanted the message written there to come to my own e-mail. After a long search, I found out that I can do this most easily and efficiently using another service, and I only need to use html. I found this method through tutorials. What I do to send the form is to give a post method to the form and I have access to use this service with the key that the site gives me. I did this as follows:
+
+<img src="./docs/assets/images/process/form.png" width="500px">
 
 ## :v: HOW TO CLONE?
 
 You have to clone this repository in order to use this app. Use the following command in your terminal:
 
-'git clone <https://github.com/Sensinki/web-app-from-scratch-2324.git>'
+' git clone <https://github.com/Sensinki/web-app-from-scratch-2324.git> '
 
 ## :black_nib: AUTHOR
+
+<img src="./docs/assets/images/avatarsena.png" width="100px" height="100px">
 
 This project is made by [Sena Nur Korkutan](https://github.com/Sensinki).
 
