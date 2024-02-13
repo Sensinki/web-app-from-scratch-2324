@@ -1,10 +1,12 @@
-# Web App From Scratch @cmda-minor-web 2023 - 2024
+# WEB APP FROM STRATCH @cmd-minor-web 2023-2024
+
+Welcome to my mini demo-portfolio site created for the Webapps From Scratch course. This site serves as a showcase of my skills. Whether you're a potential employer, collaborator, or just someone curious about what I do, I'm glad you stopped by.
 
 ## Table of Contents
 
 - [:wrench: Introduction](#wrench-introduction)
 - [:page_with_curl: Assignment](#page_with_curl-assignment)
-- [:white_check_mark: Requirements](#white_check_mark-the-requirements-of-the-assessment)
+- [:white_check_mark: Requirements](#white_check_mark-the-requirements-of-the-assignment)
 - [:hammer: Build with](#hammer-build-with)
 - [:cd: Live demo](#cd-live-demo)
 - [:bulb: Features](#bulb-features)
@@ -12,43 +14,47 @@
 - [:black_nib: Author](#black_nib-author)
 - [:copyright: License](#copyright-licence)
 
-## :wrench: Introduction
+## :wrench: INTRODUCTION
 
-In this course, you'll learn to make a website without using just basic HTML, CSS, and JavaScript. You'll build a simple, single-page website that gets information from another website and shows it on your site. You'll also learn how to test and improve your site's design. By the end, you'll be able to create mock-up websites with real info and understand how websites work behind the scenes.
+This website is built using just basic HTML, CSS, and JavaScript. I've created a simple, single-page website that retrieves information from another website and displays it here. Through this project, I've learned how to test and improve site design, allowing me to create mock-up websites with real information and gain a deeper understanding of how websites work behind the scenes.
 
-## :page_with_curl: Assignment
+## :page_with_curl: ASSIGNMENT
 
-1. Build your own SPA/Website with external data from an API with minimal 1 micro-interaction.
-2. A team app with a collection of all the individual websites of your team members.
+During this course, I should:
 
-## :white_check_mark: The requirements of the assessment
+1. Develop a single-page application (SPA) or website incorporating external data from an API, complete with at least one micro-interaction.
+2. Collaborate on a team app that features the individual websites of each team member.
 
-Your efforts are assessed using a rubric. You must pass the criteria below to pass the grade:
+## :white_check_mark: THE REQUIREMENTS OF THE ASSIGNMENT
+
+My efforts are assessed using a rubric. I must pass the criteria below to pass the grade:
 
 The project;
 
-- is made with tidy vanilla HTML, CSS en Javascript,
+- is made with clean vanilla HTML, CSS en Javascript,
 - includes diverse content,
 - includes at least one micro-interaction made in detail using JS,
-- includes at least one data-connection (API call),
+- includes at least one data-connection through an API call,
 - includes the correct data for the integration with the team app,
 - is accessible,
 - has a professional design and styling,
 - is completely responsive,
 - is documented.
 
-## :hammer: Build with
+## :hammer: BUILD WITH
+
+<img src="./docs/assets/images/html.png" width="50px" height="50px">
 
 - Semantically correct HTML
 - Clear CSS
 - Vanilla JavaScript
 - Git
 
-## :cd: Live Demo
+## :cd: LIVE DEMO
 
 You can reach the demo-website via [this link](https://sensinki.github.io/web-app-from-scratch-2324/)
 
-## :bulb: Features
+## :bulb: FEATURES
 
 I've chosen to focus on a few simple micro-interactions. You can read an overview of the features on the table below:
 
@@ -59,17 +65,17 @@ I've chosen to focus on a few simple micro-interactions. You can read an overvie
 - Backdrop filter for header
 - Loading animation
 
-## :v: How to clone?
+## :v: HOW TO CLONE?
 
 You have to clone this repository in order to use this app. Use the following command in your terminal:
 
 'git clone <https://github.com/Sensinki/web-app-from-scratch-2324.git>'
 
-## :black_nib: Author
+## :black_nib: AUTHOR
 
 This project is made by [Sena Nur Korkutan](https://github.com/Sensinki).
 
-## :copyright: Licence
+## :copyright: LICENCE
 
 This project uses the [MIT License](https://github.com/Sensinki/web-app-from-scratch-2324?tab=MIT-1-ov-file).
 

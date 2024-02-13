@@ -8,8 +8,8 @@ var openButton = document.querySelector("header > button");
 openButton.addEventListener("click", openMenu);
 
 function openMenu() {
-    var deNav = document.querySelector("nav");
-    deNav.classList.add("showMenu");
+    var theNav = document.querySelector("nav");
+    theNav.classList.add("showMenu");
 }
 
 // close the menu
@@ -17,8 +17,8 @@ var closeButton = document.querySelector("nav button");
 closeButton.addEventListener("click", closeMenu);
 
 function closeMenu() {
-    var deNav = document.querySelector("nav");
-    deNav.classList.remove("showMenu");
+    var theNav = document.querySelector("nav");
+    theNav.classList.remove("showMenu");
 }
 
 // close the menu with "esc"
@@ -26,8 +26,8 @@ window.addEventListener("keydown", handleKeydown);
 
 function handleKeydown(event) {
     if (event.key == "Escape") {
-        var deNav = document.querySelector("nav");
-        deNav.classList.remove("showMenu");
+        var theNav = document.querySelector("nav");
+        theNav.classList.remove("showMenu");
     }
 }
 
@@ -79,8 +79,3 @@ async function skillsApi() {
     }
 }
 skillsApi();
-
-// TO GOING BACK TO PREVIOUS WEBPAGE
-document.getElementById("backButton").addEventListener("onclick", () => {
-    history.back();
-});
