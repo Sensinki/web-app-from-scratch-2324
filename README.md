@@ -147,3 +147,8 @@ I wanted the form I created in the contact section to function correctly and I w
 
 <img src="./docs/assets/images/process/form.png" width="500px">
 
+
+---
+If you are interested in the process, I also have a wiki for this project. You can find it in the "Wiki" tab of the repository.
+
+
