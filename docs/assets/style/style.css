@@ -555,112 +555,170 @@ a {
         justify-content: center;
         align-items: center;
         gap: 2.3em;
+
+        /* position */
+        padding: 1em;
+
+        /* color */
         background-color: var(--magenta);
+
+        /* border */
         border-radius: 1em;
+
+        /* size */
         box-sizing: border-box;
         height: 30em;
-        padding: 1em;
         width: 25em;
         max-width: 25em;
     }
 
     fieldset {
-        border: none;
-        height: 3em;
+        /* position */
         position: relative;
+
+        /* size */
+        height: 3em;
         width: 20em;
+
+        /* border */
+        border: none;
     }
     fieldset:nth-of-type(1) {
+        /* position */
         margin-top: 1em;
     }
 
     form p {
+        /* color */
         color: var(--color-white);
+
+        /* text */
         font-size: 16px;
         font-weight: 700;
     }
 
     input {
+        /* position */
+        padding: 4px 20px 0;
+
+        /* color */
         background-color: var(--dark-blue);
+        color: var(--color-white);
+
+        /* size */
+        box-sizing: border-box;
+        height: 2.5em;
+        width: 100%;
+
+        /* border */
         border-radius: 12px;
         border: 0;
-        box-sizing: border-box;
-        color: var(--color-white);
-        font-size: 18px;
-        height: 2.5em;
-        outline: 0;
-        padding: 4px 20px 0;
-        width: 100%;
         box-shadow: 0px 2px 3px 2px var(--tra-ten);
+
+        /* text */
+        font-size: 18px;
+        outline: 0;
     }
 
     .cut {
-        background-color: var(--magenta);
-        border-radius: 10px;
-        height: 20px;
+        /* position */
         left: 20px;
         position: absolute;
         top: -20px;
+
+        /* size */
+        height: 20px;
+        width: 76px;
+
+        /* color */
+        background-color: var(--magenta);
+        /* border */
+        border-radius: 10px;
+
+        /* animation */
         transform: translateY(0);
         transition: transform 200ms;
-        width: 76px;
     }
 
     .cut-short {
+        /* size */
         width: 50px;
     }
 
     input:focus ~ .cut,
     input:not(:placeholder-shown) ~ .cut {
+        /* animation */
         transform: translateY(8px);
     }
 
     .placeholder {
-        color: var(--blue-placeholder);
-        left: 20px;
-        line-height: 8px;
-        pointer-events: none;
+        /* position */
         position: absolute;
+        top: 20px;
+        left: 20px;
+
+        /* size */
+        line-height: 8px;
+
+        /* color */
+        color: var(--blue-placeholder);
+
+        /* animation */
+        pointer-events: none;
         transform-origin: 0 50%;
         transition: transform 200ms, color 200ms;
-        top: 20px;
     }
 
     input:focus ~ .placeholder,
     input:not(:placeholder-shown) ~ .placeholder {
+        /* animation */
         transform: translateY(-30px) translateX(10px) scale(0.75);
     }
 
     input:not(:placeholder-shown) ~ .placeholder {
+        /* color */
         color: var(--input);
     }
 
     input:focus ~ .placeholder {
+        /* color */
         color: var(--input-green);
     }
 
     input[type="submit"] {
+        /* color */
         background-color: var(--blue);
-        border-radius: 12px;
-        border: 0;
-        box-sizing: border-box;
         color: var(--input-pink);
-        cursor: pointer;
-        font-size: 18px;
+
+        /* size */
         height: 50px;
-        outline: 0;
-        text-align: center;
         width: 100%;
         max-width: 17.5em;
+
+        box-sizing: border-box;
+        cursor: pointer;
+
+        /* border */
+        border-radius: 12px;
+        border: 0;
+
+        /* text */
+        font-size: 18px;
+        outline: 0;
+        text-align: center;
     }
 
     input[type="submit"]:hover {
+        /* color */
         background-color: var(--input-pink);
         color: var(--blue);
     }
 
     input[type="submit"]:active {
+        /* color */
         background-color: var(--purple);
+
+        /* animation */
         transform: translateY(0.2em);
         transition-duration: 0.2s;
     }
@@ -669,33 +727,47 @@ a {
     /* SECTION 5 */
     /* got help from: https://cssgrid-generator.netlify.app/ */
     main > section:nth-of-type(5) {
+        /* display */
         display: grid;
         grid-template-rows: 15em 1fr 1fr;
         justify-items: center;
+
+        /* text */
         font-size: 14px;
     }
 
     main > section:nth-of-type(5) h1 {
+        /* display */
         grid-area: 1 / 1 / 2 / 2;
         align-self: self-end;
     }
     main > section:nth-of-type(5) form {
+        /* display */
         grid-area: 2 / 1 / 2 / 2;
     }
 
     main > section:nth-of-type(5) section {
+        /* display */
         grid-area: 3 / 1 / 4 / 2;
-        width: 100vw;
-        background: var(--purple);
-        box-shadow: 0px 1px 10px 5px var(--tra-ten);
         align-self: end;
+
+        /* position */
         padding: 1em;
+
+        /* size */
+        width: 100vw;
+        box-shadow: 0px 1px 10px 5px var(--tra-ten);
+
+        /* color */
+        background: var(--purple);
     }
     main > section:nth-of-type(5) section h3 {
+        /* display */
         display: none;
     }
 
     main > section:nth-of-type(5) section ul {
+        /* display */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -703,10 +775,12 @@ a {
     }
 
     main > section:nth-of-type(5) section ul li img {
+        /* size */
         width: 3em;
         height: 3em;
     }
     main > section:nth-of-type(5) section p {
+        /* text */
         font-size: 1em;
         text-align: center;
     }
@@ -780,6 +854,7 @@ a {
 
     /* SECTION 1 */
     main > section:nth-of-type(1) {
+        /* display */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -787,16 +862,19 @@ a {
     }
 
     main > section:nth-of-type(1) article {
+        /* display */
         grid-area: 2 / 1 / 3 / 2;
     }
 
     main > section:nth-of-type(1) img {
+        /* display */
         grid-area: 1 / 2 / 4 / 3;
     }
 
     /* SECTION 2 */
 
     main > section:nth-of-type(2) {
+        /* display */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -804,11 +882,15 @@ a {
     }
 
     main > section:nth-of-type(2) img {
+        /* display */
         grid-area: 2 / 1 / 3 / 2;
+
+        /* size */
         height: 27em;
     }
 
     main > section:nth-of-type(2) article {
+        /* display */
         grid-area: 1 / 2 / 4 / 3;
     }
 
@@ -820,6 +902,7 @@ a {
     /* SECTION 3 */
 
     main > section:nth-of-type(3) {
+        /* display */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 15em 1fr 1fr;
@@ -829,21 +912,25 @@ a {
     }
 
     main > section:nth-of-type(3) h1 {
+        /* display */
         grid-area: 1 / 1 / 2 / 2;
         align-self: self-end;
     }
 
     main > section:nth-of-type(3) button {
+        /* display */
         grid-area: 2 / 1 / 3 / 2;
     }
 
     main > section:nth-of-type(3) p {
+        /* display */
         grid-area: 3 / 1 / 4 / 2;
         align-self: self-start;
     }
 
     /* SECTION 4 */
     main > section:nth-of-type(4) {
+        /* display */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 15em 2fr 1fr;
@@ -853,15 +940,18 @@ a {
     }
 
     main > section:nth-of-type(4) h1 {
+        /* display */
         grid-area: 1 / 1 / 2 / 2;
         align-self: self-end;
     }
 
     main > section:nth-of-type(4) ul {
+        /* display */
         grid-area: 2 / 1 / 3 / 2;
     }
 
     main > section:nth-of-type(4) p {
+        /* display */
         grid-area: 3 / 1 / 4 / 2;
         align-self: self-start;
     }
@@ -876,32 +966,44 @@ a {
     /* SECTION 5 */
     /* got help from: https://cssgrid-generator.netlify.app/ */
     main > section:nth-of-type(5) {
+        /* display */
         display: grid;
         grid-template-rows: 15em 1fr 1fr;
         justify-items: center;
     }
 
     main > section:nth-of-type(5) h1 {
+        /* display */
         grid-area: 1 / 1 / 2 / 2;
         align-self: self-end;
     }
     main > section:nth-of-type(5) form {
+        /* display */
         grid-area: 2 / 1 / 2 / 2;
     }
 
     main > section:nth-of-type(5) section {
+        /* display */
         grid-area: 3 / 1 / 4 / 2;
+        align-self: end;
+
+        /* positon */
+        padding: 1em;
+
+        /* size */
         width: 100vw;
+
+        /* color */
         background: var(--purple);
         box-shadow: 0px 1px 10px 5px var(--tra-ten);
-        align-self: end;
-        padding: 1em;
     }
     main > section:nth-of-type(5) section h3 {
+        /* display */
         display: none;
     }
 
     main > section:nth-of-type(5) section ul {
+        /* display */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -909,15 +1011,18 @@ a {
     }
 
     main > section:nth-of-type(5) section ul li img {
+        /* size */
         width: 3em;
         height: 3em;
     }
     main > section:nth-of-type(5) section p {
+        /* text */
         font-size: 1em;
         text-align: center;
     }
 
     form {
+        /* size */
         gap: 2.3em;
         height: 30em;
         width: 25em;
@@ -934,6 +1039,7 @@ a {
 
     /* SECTION 2 */
     main > section:nth-of-type(2) p {
+        /* position */
         padding: 0;
         margin: 1em;
     }
