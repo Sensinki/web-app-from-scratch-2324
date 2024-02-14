@@ -654,6 +654,11 @@ a {
         max-width: 17.5em;
     }
 
+    input[type="submit"]:hover {
+        background-color: var(--input-pink);
+        color: var(--blue);
+    }
+
     input[type="submit"]:active {
         background-color: var(--purple);
         transform: translateY(0.2em);
